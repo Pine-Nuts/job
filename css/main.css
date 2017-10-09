@@ -495,8 +495,20 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #fff;
 }
 
-.about-content a {
-    margin-top: 90px;
+.about-content p {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: 6px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+    -webkit-transition: opacity 0.2s 1.6s ease-out;
+       -moz-transition: opacity 0.2s 1.6s ease-out;
+         -o-transition: opacity 0.2s 1.6s ease-out;
+            transition: opacity 0.2s 1.6s ease-out;
 }
 
 /* ==========================================================================
@@ -512,23 +524,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .services-content {
     padding-bottom: 150px;
-}
-
-.services-content ul li {
-    font-size: 1.125rem;
-    font-size: 18px;
-    line-height: 2.25rem;
-    line-height: 36px;
-}
-
-.services-content ul li:first-child {
-    font-size: 1rem;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 27px;
-    display: inline-block;
-    color: #000;
-    text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -601,10 +596,17 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
     margin: 0 18px;
 }*/
+@font-face {
+    font-family: 'iconfont';  /* project id 434888 */
+    src: url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.eot');
+    src: url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.woff') format('woff'),
+    url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.svg#iconfont') format('svg');
+  }
 
-.social [class^="icon-"],
-.social [class*=" icon-"] {
-    font-family: 'icon';
+.social .iconfont {
+    /* font-family: 'iconfont';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -616,7 +618,14 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 16px;
     color: #F10061;
     padding: 6px;
-    margin: 0 27px;
+    margin: 0 27px; */
+    font-family:"iconfont";
+	font-size:16px;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale; 
+        padding-left:20px;
 
     -webkit-transition: color 0.3s ease;
        -moz-transition: color 0.3s ease;
@@ -627,32 +636,14 @@ h1, h2, h3, h4, h5, h6, p {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.social [class^="icon-"]:hover,
-.social [class*=" icon-"]:hover {
-    color: #F83E89;
+.social .iconfont:hover {
+    color: skyblue;
 }
 
 .social {
     margin-top: 90px;
     cursor: default;
 }
-
-.icon-twitter:before {
-    content: "\e600";
-}
-
-.icon-linkedin:before {
-    content: "\e601";
-}
-
-.icon-instagram:before {
-    content: "\e602";
-}
-
-.icon-github:before {
-    content: "\e603";
-}
-
 
 /* ==========================================================================
    Media Queries
@@ -729,26 +720,6 @@ h1, h2, h3, h4, h5, h6, p {
             font-size: 1.3125rem;
             font-size: 21px;
         }
-
-        .services-content ul li {
-            font-size: 1rem;
-            font-size: 16px;
-            line-height: 1.875rem;
-            line-height: 30px;
-        }
-
-        .services-content ul {
-            margin-bottom: 60px;
-        }
-
-        .services-team ul {
-            margin-bottom: 0;
-        }
-
-        .social [class^="icon-"],
-        .social [class*=" icon-"] {
-            margin: 0 3px;
-        }    
         
         .span_1 {
             width:8.33333333333%;
@@ -789,7 +760,6 @@ h1, h2, h3, h4, h5, h6, p {
         .about-description,
         .services-design,
         .services-frontend,
-        .services-team,
         .work-title,
         .work-description,
         .work-item,
@@ -871,27 +841,6 @@ h1, h2, h3, h4, h5, h6, p {
             font-size: 1.3125rem;
             font-size: 21px;
         }
-
-        .services-content ul li {
-            font-size: 1rem;
-            font-size: 16px;
-            line-height: 1.875rem;
-            line-height: 30px;
-        }
-
-        .services-content ul {
-            margin-bottom: 60px;
-        }
-
-        .services-team ul {
-            margin-bottom: 0;
-        }
-
-        .social [class^="icon-"],
-        .social [class*=" icon-"] {
-            margin: 0 3px;
-        }
-        
         .span_1 {
             width:8.33333333333%;
         }
@@ -931,7 +880,6 @@ h1, h2, h3, h4, h5, h6, p {
         .about-description,
         .services-design,
         .services-frontend,
-        .services-team,
         .work-title,
         .work-description,
         .work-item,
@@ -1008,11 +956,6 @@ h1, h2, h3, h4, h5, h6, p {
             padding: 9px 0 9px 27px;
         }
 
-        .services-content ul li:first-child {
-            font-size: 0.8125rem;
-            font-size: 13px;
-        }
-        
         .span_1 {
             width:8.33333333333%;
         }
@@ -1027,8 +970,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
         .span_4,
         .services-design,
-        .services-frontend,
-        .services-team {
+        .services-frontend {
             width:33.3333333333%;
         }
         .span_5 {
@@ -1113,7 +1055,6 @@ h1, h2, h3, h4, h5, h6, p {
         .span_4,
         .services-design,
         .services-frontend,
-        .services-team,
         .work-item {
             width:33.3333333333%;
         }
@@ -1198,7 +1139,6 @@ h1, h2, h3, h4, h5, h6, p {
         .span_4,
         .services-frontend,
         .services-design,
-        .services-team,
         .work-item {
             width:33.3333333333%;
         }
