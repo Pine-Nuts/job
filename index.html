@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- Fonts -->
-    <!-- <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700'> -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700'>
     <title>PineNut 个人简历</title>
 </head>
 
@@ -56,6 +56,9 @@
 
         <section id="about" class="row">
             <div class="page about-content">
+                <div class="col about-title">
+                    <h3 data-100="-webkit-transform: translateX(100px); opacity:0;" data-500="-webkit-transform: translateX(0px); opacity:1;">About me</h3>
+                </div>
                 <div class="col empty">&nbsp;</div>
                 <div class="col about-description">
                     <p data-100="opacity:0;" data-500="opacity:1;">您好，我叫程树人，22岁。我并不是计算机专业，但是我对前端很感兴趣，所以自学的前端。 今后的职业规划是全栈工程师。目前正在学AngularJs、Webpack等。在工作的这段时间里，本人在公司主要负责前端的开发，配合后台人员实现
@@ -107,42 +110,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col work-item" data-1300="opacity:0;" data-1600="opacity:1;">
-                    <img src="img/works/1.jpg" alt="">
-                    <div class="work-item-inside">
-                        <div class="work-item-inside-content">
-                            <h4>Design</h4>
-                            <a href="#" class="but">Click here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col work-item" data-1300="opacity:0;" data-1400="opacity:1;">
-                    <img src="img/works/1.jpg" alt="">
-                    <div class="work-item-inside">
-                        <div class="work-item-inside-content">
-                            <h4>Design</h4>
-                            <a href="#" class="but">Click here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col work-item" data-1300="opacity:0;" data-1500="opacity:1;">
-                    <img src="img/works/1.jpg" alt="">
-                    <div class="work-item-inside">
-                        <div class="work-item-inside-content">
-                            <h4>Design</h4>
-                            <a href="#" class="but">Click here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col work-item" data-1300="opacity:0;" data-1600="opacity:1;">
-                    <img src="img/works/1.jpg" alt="">
-                    <div class="work-item-inside">
-                        <div class="work-item-inside-content">
-                            <h4>Design</h4>
-                            <a href="#" class="but">Click here</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -151,20 +118,21 @@
         <section id="contact" class="row">
             <div class="contact-content page">
                 <div class="col contact-title">
-                    <h3 data-100="-webkit-transform: translateX(100px); opacity:0;" data-500="-webkit-transform: translateX(0px); opacity:1;">Contact For Me</h3>
+                    <h3 data-100="-webkit-transform: translateX(100px); opacity:0;" data-500="-webkit-transform: translateX(0px); opacity:1;">Contact for me
+                        </h3>
                 </div>
                 <div class="col empty">&nbsp;</div>
                 <div class="col contact-description">
-                    <a href="#" class="but">hello@afrussel.com</a>
+                    <p>在人生灰暗的时候，哪怕面对千万人的嘲笑。希望你也能像今天一样，坚持自己的信念，直至成功。成功源于坚持</p>
                 </div>
                 <div class="col empty">&nbsp;</div>
                 <div class="col span_12 social">
-                    <a class="iconfont" href="#" target="_blank">&#xe93b;</a>
-                    <a class="iconfont" href="#" target="_blank">&#xe665;</a>
-                    <a class="iconfont" href="#" target="_blank">&#xe611;</a>
-                    <a class="iconfont" href="#" target="_blank">&#xe632;</a>
-                    <a class="iconfont" href="#" target="_blank">&#xe60d;</a>
-                    <a class="iconfont" href="#" target="_blank">&#xe636;</a>
+                    <a class="iconfont icon-github" href="#" target="_blank"></a>
+                    <a class="iconfont icon-email" href="#" target="_blank"></a>
+                    <a class="iconfont icon-qq" href="#" target="_blank"></a>
+                    <a class="iconfont icon-weichat" href="#" target="_blank"></a>
+                    <a class="iconfont icon-weibo" href="#" target="_blank"></a>
+                    <a class="iconfont icon-zhihu" href="#" target="_blank"></a>
                 </div>
             </div>
         </section>
@@ -178,163 +146,7 @@
     <script src="js/skrollr.js"></script>
     <script src="js/main.js"></script>
     <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
-    <script type="text/javascript">
-        // 路径配置
-        require.config({
-            paths: {
-                echarts: 'http://echarts.baidu.com/build/dist'
-            }
-        });
-        // 使用
-        require(
-            [
-                'echarts',
-                'echarts/chart/pie' // 使用饼状图就加载pie模块，按需加载
-            ],
-            function (ec) {
-                // 基于准备好的dom，初始化echarts图表
-                var myChart = ec.init(document.getElementById('container'));
-                var dataStyle = {
-                    normal: {
-                        label: {
-                            show: false
-                        },
-                        labelLine: {
-                            show: false
-                        }
-                    }
-                };
-                var placeHolderStyle = {
-                    normal: {
-                        color: 'rgba(0,0,0,0)',
-                        label: {
-                            show: false
-                        },
-                        labelLine: {
-                            show: false
-                        }
-                    },
-                    emphasis: {
-                        color: 'rgba(0,0,0,0)'
-                    }
-                };
-                option = {
-                    title: {
-                        text: 'skills',
-                        x: 'center',
-                        y: 'center',
-                        itemGap: 20,
-                        textStyle: {
-                            color: 'rgba(30,144,255,0.8)',
-                            fontFamily: '微软雅黑',
-                            fontSize: 35,
-                            fontWeight: 'bolder'
-                        }
-                    },
-                    tooltip: {
-                        show: true,
-                        formatter: "{a} <br/>{b} : {c} ({d}%)"
-                    },
-                    legend: {
-                        orient: 'vertical',
-                        x: 'left',
-                        y: 'center',
-                        itemGap: 12,
-                        data: ['jQuery','HTML5', 'CSS', 'JavaScript', 'Vue']
-                    },
-                    series: [{
-                            name: '1',
-                            type: 'pie',
-                            clockWise: false,
-                            radius: [170, 199],
-                            itemStyle: dataStyle,
-                            data: [{
-                                    value: 85,
-                                    name: 'jQuery'
-                                },
-                                {
-                                    value: 15,
-                                    name: 'invisible',
-                                    itemStyle: placeHolderStyle
-                                }
-                            ]
-                        },{
-                            name: '2',
-                            type: 'pie',
-                            clockWise: false,
-                            radius: [140, 165],
-                            itemStyle: dataStyle,
-                            data: [{
-                                    value: 80,
-                                    name: 'HTML5'
-                                },
-                                {
-                                    value: 20,
-                                    name: 'invisible',
-                                    itemStyle: placeHolderStyle
-                                }
-                            ]
-                        },
-                        {
-                            name: '3',
-                            type: 'pie',
-                            clockWise: false,
-                            radius: [110, 135],
-                            itemStyle: dataStyle,
-                            data: [{
-                                    value: 65,
-                                    name: 'CSS'
-                                },
-                                {
-                                    value: 35,
-                                    name: 'invisible',
-                                    itemStyle: placeHolderStyle
-                                }
-                            ]
-                        },
-                        {
-                            name: '4',
-                            type: 'pie',
-                            clockWise: false,
-                            radius: [80, 105],
-                            itemStyle: dataStyle,
-                            data: [{
-                                    value: 70,
-                                    name: 'JavaScript'
-                                },
-                                {
-                                    value: 30,
-                                    name: 'invisible',
-                                    itemStyle: placeHolderStyle
-                                }
-                            ]
-                        },
-                        {
-                            name: '5',
-                            type: 'pie',
-                            clockWise: false,
-                            radius: [50, 75],
-                            itemStyle: dataStyle,
-                            data: [{
-                                    value: 70,
-                                    name: 'Vue'
-                                },
-                                {
-                                    value: 30,
-                                    name: 'invisible',
-                                    itemStyle: placeHolderStyle
-                                }
-                            ]
-                        }
-                    ]
-                };
-
-
-                // 为echarts对象加载数据 
-                myChart.setOption(option);
-            }
-        );
-    </script>
+    <script src="js/echart-pie.js"></script>
 </body>
 
 </html>

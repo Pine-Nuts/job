@@ -2,7 +2,7 @@
    General
    ========================================================================== */
 
-* {
+   * {
     padding: 0;
     margin: 0;
 }
@@ -14,18 +14,20 @@ html {
 
 body {
     background-color: #fff;
-    font-size: 100%; /* 16px */
+    font-size: 100%;
+    /* 16px */
     line-height: normal;
     font-weight: 300;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     color: #222;
     height: 100%;
 }
+
 *,
 *:after,
 *::before {
--moz-box-sizing: border-box;
-     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -87,30 +89,36 @@ li {
     z-index: 9999;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
 .row [class$="-content"] {
     overflow: hidden;
 }
-.copyrights{
-	text-indent:-9999px;
-	height:0;
-	line-height:0;
-	font-size:0;
-	overflow:hidden;
+
+.copyrights {
+    text-indent: -9999px;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
 }
-@font-face {
-    font-family: 'icon';
-    src:url('../fonts/icon.eot');
-    src:url('../fonts/icond41d.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/icon.woff') format('woff'),
-        url('../fonts/icon.ttf') format('truetype'),
-        url('../fonts/icon.svg#icon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1507638869624'); /* IE9*/
+    src: url('iconfont.eot?t=1507638869624#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+    url('iconfont.ttf?t=1507638869624') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg?t=1507638869624#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
 
 
 /* ==========================================================================
@@ -119,29 +127,25 @@ h1, h2, h3, h4, h5, h6, p {
 
 .but {
     display: inline-block;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;   
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    font-size: 16px;    
+    font-size: 16px;
     padding: 0 45px;
     line-height: 55px;
     background-color: #F10061;
-
     -webkit-border-radius: 45px;
-       -moz-border-radius: 45px;
-            border-radius: 45px;
-
+    -moz-border-radius: 45px;
+    border-radius: 45px;
     -webkit-background-clip: padding-box;
-       -moz-background-clip: padding-box;
-            background-clip: padding-box;
-
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
     color: #fff;
     border: 0;
-
     -webkit-transition: background-color 0.3s ease;
-       -moz-transition: background-color 0.3s ease;
-         -o-transition: background-color 0.3s ease;
-            transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .off {
@@ -150,28 +154,25 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 55px;
     background-color: rgba(255, 255, 255, 0.2);
     cursor: default;
-
     -webkit-border-radius: 45px;
-       -moz-border-radius: 45px;
-            border-radius: 45px;
-
+    -moz-border-radius: 45px;
+    border-radius: 45px;
     -webkit-background-clip: padding-box;
-       -moz-background-clip: padding-box;
-            background-clip: padding-box;
-
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
     color: #fff;
     border: 0;
-
     -webkit-transition: background-color 0.3s ease, color 0.3s ease;
-       -moz-transition: background-color 0.3s ease, color 0.3s ease;
-         -o-transition: background-color 0.3s ease, color 0.3s ease;
-            transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .but:hover,
 .but:active {
     background-color: #F83E89;
 }
+
 
 /* ==========================================================================
    Header
@@ -188,13 +189,17 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
-       -moz-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
-         -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
-            transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
-    background: -webkit-linear-gradient(70deg, rgba(255, 255, 255) 30%,rgb(0, 0, 0) 1%,rgba(0, 0, 0, 0.8) 69%); /* Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(70deg, rgba(255, 255, 255) 30%,rgb(0, 0, 0) 1%,rgba(0, 0, 0, 0.8) 69%); /* Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(70deg, rgba(255, 255, 255) 30%,rgb(0, 0, 0) 1%,rgba(0, 0, 0, 0.8) 69%); /* Firefox 3.6 to 15 */
-    background: linear-gradient(70deg, rgba(255, 255, 255) 30%,rgb(0, 0, 0) 1%,rgba(0, 0, 0, 0.8) 69%); /* 标准语法 */
+    -moz-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+    -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+    transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+    background: -webkit-linear-gradient(70deg, rgba(255, 255, 255) 30%, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 69%);
+    /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(70deg, rgba(255, 255, 255) 30%, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 69%);
+    /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(70deg, rgba(255, 255, 255) 30%, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 69%);
+    /* Firefox 3.6 to 15 */
+    background: linear-gradient(70deg, rgba(255, 255, 255) 30%, rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 69%);
+    /* 标准语法 */
 }
 
 .menu.visuallyhidden {
@@ -219,11 +224,10 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 18px 0 18px 45px;
-
     -webkit-transition: background 0.2s ease, color 0.2s ease;
-       -moz-transition: background 0.2s ease, color 0.2s ease;
-         -o-transition: background 0.2s ease, color 0.2s ease;
-            transition: background 0.2s ease, color 0.2s ease;
+    -moz-transition: background 0.2s ease, color 0.2s ease;
+    -o-transition: background 0.2s ease, color 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
 .menu ul li a:hover {
@@ -242,12 +246,11 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: pointer;
     z-index: 9999;
     border-radius: 50%;
-    box-shadow:  0 2px 2px #666;
-
+    box-shadow: 0 2px 2px #666;
     -webkit-transition: opacity 0.2s 1.6s ease-out;
-       -moz-transition: opacity 0.2s 1.6s ease-out;
-         -o-transition: opacity 0.2s 1.6s ease-out;
-            transition: opacity 0.2s 1.6s ease-out;     
+    -moz-transition: opacity 0.2s 1.6s ease-out;
+    -o-transition: opacity 0.2s 1.6s ease-out;
+    transition: opacity 0.2s 1.6s ease-out;
 }
 
 .menu-icon.jiji {
@@ -259,13 +262,12 @@ h1, h2, h3, h4, h5, h6, p {
     height: 2px;
     position: relative;
     display: inline-block;
-    background: #fff; 
+    background: #fff;
     margin: 30px 11px;
-
     -webkit-transition: background 0.4s ease-out;
-       -moz-transition: background 0.4s ease-out;
-         -o-transition: background 0.4s ease-out;
-            transition: background 0.4s ease-out; 
+    -moz-transition: background 0.4s ease-out;
+    -o-transition: background 0.4s ease-out;
+    transition: background 0.4s ease-out;
 }
 
 .menu-icon span:before {
@@ -281,20 +283,11 @@ h1, h2, h3, h4, h5, h6, p {
     position: absolute;
     left: 0;
     content: "";
-
     transform-origin: 50% 50%;
-
-    -webkit-transition: top 0.2s 0.2s ease-out,
-    -webkit-transform 0.2s linear;
-
-    -moz-transition: top 0.2s 0.2s ease-out,
-    -moz-transform 0.2s linear;
-
-    -o-transition: top 0.2s 0.2s ease-out,
-    -o-transform 0.2s linear;
-
-    transition: top 0.2s 0.2s ease-out,
-    transform 0.2s -out;
+    -webkit-transition: top 0.2s 0.2s ease-out, -webkit-transform 0.2s linear;
+    -moz-transition: top 0.2s 0.2s ease-out, -moz-transform 0.2s linear;
+    -o-transition: top 0.2s 0.2s ease-out, -o-transform 0.2s linear;
+    transition: top 0.2s 0.2s ease-out, transform 0.2s -out;
 }
 
 .menu-icon span:after {
@@ -303,38 +296,25 @@ h1, h2, h3, h4, h5, h6, p {
 
 .menu-icon.close span {
     -webkit-transition: background 0.2s ease-out;
-       -moz-transition: background 0.2s ease-out;
-         -o-transition: background 0.2s ease-out;
-            transition: background 0.2s ease-out;
-    
+    -moz-transition: background 0.2s ease-out;
+    -o-transition: background 0.2s ease-out;
+    transition: background 0.2s ease-out;
     background-color: transparent;
 }
 
 .menu-icon.close span:before {
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
-       -moz-transform: rotate3d(0, 0, 1, 45deg);
-         -o-transform: rotate3d(0, 0, 1, 45deg);
-            transform: rotate3d(0, 0, 1, 45deg);
+    -moz-transform: rotate3d(0, 0, 1, 45deg);
+    -o-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
 }
 
 .menu-icon.close span:before,
 .menu-icon.close span:after {
-    -webkit-transition: top 0.2s ease-out,
-    -webkit-transform 0.2s 0.2s ease-out,
-    background 0.2s ease-out;
-
-    -moz-transition: top 0.2s ease-out,
-    -moz-transform 0.2s 0.2s ease-out,
-    background 0.2s ease-out;
-
-    -o-transition: top 0.2s ease-out,
-    -o-transform 0.2s 0.2s ease-out,
-    background 0.2s ease-out;
-
-    transition: top 0.2s ease-out,
-    transform 0.2s 0.2s ease-out,
-    background 0.2s ease-out;
-
+    -webkit-transition: top 0.2s ease-out, -webkit-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
+    -moz-transition: top 0.2s ease-out, -moz-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
+    -o-transition: top 0.2s ease-out, -o-transform 0.2s 0.2s ease-out, background 0.2s ease-out;
+    transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out, background 0.2s ease-out;
     top: 0;
     width: 41px;
     background-color: #000;
@@ -342,9 +322,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .menu-icon.close span:after {
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
-       -moz-transform: rotate3d(0, 0, 1, -45deg);
-         -o-transform: rotate3d(0, 0, 1, -45deg);
-            transform: rotate3d(0, 0, 1, -45deg);
+    -moz-transform: rotate3d(0, 0, 1, -45deg);
+    -o-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
 }
 
 .menu-icon p {
@@ -355,6 +335,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
     color: #fff;
 }
+
 
 /*.menu-icon p:before {
     content: 'Menu';
@@ -370,6 +351,7 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 0;
 }*/
 
+
 /* ==========================================================================
    All Sections
    ========================================================================== */
@@ -384,7 +366,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-content h3,
-.services-content h3,
 .work-content h3,
 .contact-content h3 {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
@@ -398,7 +379,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-content p,
-.services-content p,
 .work-content p,
 .contact-content p {
     font-size: 1.125rem;
@@ -408,12 +388,13 @@ h1, h2, h3, h4, h5, h6, p {
     color: #222;
 }
 
+
 /* ==========================================================================
    Home
    ========================================================================== */
 
 #home {
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0, 0, 0, .5);
     background-image: url(../img/header-bg.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
@@ -441,11 +422,10 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 3px;
     margin-bottom: 9px;
     opacity: 1;
-
     -webkit-transition: opacity 0.2s 1.2s ease-out;
-       -moz-transition: opacity 0.2s 1.2s ease-out;
-         -o-transition: opacity 0.2s 1.2s ease-out;
-            transition: opacity 0.2s 1.2s ease-out;    
+    -moz-transition: opacity 0.2s 1.2s ease-out;
+    -o-transition: opacity 0.2s 1.2s ease-out;
+    transition: opacity 0.2s 1.2s ease-out;
 }
 
 .home-title h2 {
@@ -457,11 +437,10 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 6px;
     margin-bottom: 15px;
     text-transform: uppercase;
-
     -webkit-transition: opacity 0.2s 1.6s ease-out;
-       -moz-transition: opacity 0.2s 1.6s ease-out;
-         -o-transition: opacity 0.2s 1.6s ease-out;
-            transition: opacity 0.2s 1.6s ease-out;    
+    -moz-transition: opacity 0.2s 1.6s ease-out;
+    -o-transition: opacity 0.2s 1.6s ease-out;
+    transition: opacity 0.2s 1.6s ease-out;
 }
 
 .home-title p {
@@ -473,18 +452,12 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 6px;
     padding-bottom: 5px;
     text-transform: uppercase;
-
     -webkit-transition: opacity 0.2s 1.6s ease-out;
-       -moz-transition: opacity 0.2s 1.6s ease-out;
-         -o-transition: opacity 0.2s 1.6s ease-out;
-            transition: opacity 0.2s 1.6s ease-out;
+    -moz-transition: opacity 0.2s 1.6s ease-out;
+    -o-transition: opacity 0.2s 1.6s ease-out;
+    transition: opacity 0.2s 1.6s ease-out;
 }
 
-.home-title.jiji h1,
-.home-title.jiji h2,
-.home-title.jiji p {
-    opacity: 0;
-}
 
 /* ==========================================================================
    About
@@ -493,22 +466,6 @@ h1, h2, h3, h4, h5, h6, p {
 #about {
     padding-bottom: 90px;
     background-color: #fff;
-}
-
-.about-content p {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    font-size: 16px;
-    font-weight: 300;
-    color: #222;
-    letter-spacing: 6px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-
-    -webkit-transition: opacity 0.2s 1.6s ease-out;
-       -moz-transition: opacity 0.2s 1.6s ease-out;
-         -o-transition: opacity 0.2s 1.6s ease-out;
-            transition: opacity 0.2s 1.6s ease-out;
 }
 
 /* ==========================================================================
@@ -525,6 +482,8 @@ h1, h2, h3, h4, h5, h6, p {
 .services-content {
     padding-bottom: 150px;
 }
+
+
 
 /* ==========================================================================
    Work
@@ -558,7 +517,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .work-item-inside {
     background-color: rgba(0, 0, 0, 1);
-    color: #fff;    
+    color: #fff;
     display: block;
     position: absolute;
     left: 0px;
@@ -568,11 +527,10 @@ h1, h2, h3, h4, h5, h6, p {
     opacity: 0;
     visibility: hidden;
     text-align: center;
-
     -webkit-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
-       -moz-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
-         -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
-            transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+    -moz-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+    -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+    transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
 }
 
 .work-item-inside.visuallyshowed {
@@ -585,59 +543,37 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
 }
 
+
 /* ==========================================================================
    Contact
    ========================================================================== */
 
-/*.social [class^="icon-"],
+.social [class^="icon-"],
 .social [class*=" icon-"] {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    margin: 0 18px;
-}*/
-@font-face {
-    font-family: 'iconfont';  /* project id 434888 */
-    src: url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.eot');
-    src: url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.woff') format('woff'),
-    url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_434888_qusj4jsitij54s4i.svg#iconfont') format('svg');
-  }
-
-.social .iconfont {
-    /* font-family: 'iconfont';
+    font-family: 'iconfont';
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    font-size: 1.6875rem;
-    font-size: 27px;
+    font-size: 2rem;
+    font-size: 32px;
+    color: #333333;
     line-height: 1rem;
     line-height: 16px;
-    color: #F10061;
     padding: 6px;
-    margin: 0 27px; */
-    font-family:"iconfont";
-	font-size:16px;
-	font-style:normal;
-	-webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: 0.2px;
-        -moz-osx-font-smoothing: grayscale; 
-        padding-left:20px;
-
+    margin: 0 15px;
     -webkit-transition: color 0.3s ease;
-       -moz-transition: color 0.3s ease;
-         -o-transition: color 0.3s ease;
-            transition: color 0.3s ease;
-
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.social .iconfont:hover {
-    color: skyblue;
+.social [class^="icon-"]:hover,
+.social [class*=" icon-"]:hover {
+    color: #1296db;
 }
 
 .social {
@@ -645,24 +581,44 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: default;
 }
 
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-weichat:before { content: "\e632"; }
+  
+  .icon-zhihu:before { content: "\e619"; }
+  
+  .icon-weibo:before { content: "\e60d"; }
+  
+  .icon-qq:before { content: "\e61d"; }
+  
+  .icon-email:before { content: "\e665"; }
+  
+  .icon-github:before { content: "\e803"; }
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 .col {
-    border:0px solid rgba(0,0,0,0);
-    float:left;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    -moz-background-clip:padding-box !important;
-    -webkit-background-clip:padding-box !important;
-    background-clip:padding-box !important;
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
 }
 
 
-
-    /* 1. 12 Column Grid 0px - 319px 
+/* 1. 12 Column Grid 0px - 319px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -680,98 +636,94 @@ h1, h2, h3, h4, h5, h6, p {
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 0px) and (max-width: 319px) {
-        
-        .row {
-            margin-left:-24px;
-        }
-        .col {
-            border-left-width:24px;
-            padding:0 0px;
-        }
-        
-
-        .menu-icon {
-            top: 27px;
-            left: 27px;
-        }
-        
-        .home-title h1 {
-            font-size: 1.6875rem;
-            font-size: 27px;
-        }
-
-        .home-title h2 {
-            font-size: 0.8125rem;
-            font-size: 13px;
-            letter-spacing: 3px;
-        }
-
-        #about .empty,
-        #work .empty,
-        #contact .empty {
-            display: none;
-        }
-
-        .about-title h3,
-        .work-title h3,
-        .contact-title h3,
-        .menu ul li a {
-            font-size: 1.3125rem;
-            font-size: 21px;
-        }
-        
-        .span_1 {
-            width:8.33333333333%;
-        }
-        .span_2 {
-            width:16.6666666667%;
-        }
-        .span_3 {
-            width:25.0%;
-        }
-        .span_4 {
-            width:33.3333333333%;
-        }
-        .span_5 {
-            width:41.6666666667%;
-        }
-        .span_6 {
-            width:50.0%;
-        }
-        .span_7 {
-            width:58.3333333333%;
-        }
-        .span_8 {
-            width:66.6666666667%;
-        }
-        .span_9 {
-            width:75.0%;
-        }
-        .span_10 {
-            width:83.3333333333%;
-        }
-        .span_11 {
-            width:91.6666666667%;
-        }
-        .span_12,
-        .home-title,
-        .about-title,
-        .about-description,
-        .services-design,
-        .services-frontend,
-        .work-title,
-        .work-description,
-        .work-item,
-        .contact-title,
-        .contact-description,
-        .f1 {
-            margin-left:0;
-            width:100%;
-        }
+@media screen and (min-width: 0px) and (max-width: 319px) {
+    .row {
+        margin-left: -24px;
     }
+    .col {
+        border-left-width: 24px;
+        padding: 0 0px;
+    }
+    .menu-icon {
+        top: 27px;
+        left: 27px;
+    }
+    .home-title h1 {
+        font-size: 1.6875rem;
+        font-size: 27px;
+    }
+    .home-title h2 {
+        font-size: 0.8125rem;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    #about .empty,
+    #work .empty,
+    #contact .empty {
+        display: none;
+    }
+    .about-title h3,
+    .work-title h3,
+    .contact-title h3,
+    .menu ul li a {
+        font-size: 1.3125rem;
+        font-size: 21px;
+    }
+    .social [class^="icon-"],
+    .social [class*=" icon-"] {
+        margin: 0 3px;
+    }
+    .span_1 {
+        width: 8.33333333333%;
+    }
+    .span_2 {
+        width: 16.6666666667%;
+    }
+    .span_3 {
+        width: 25.0%;
+    }
+    .span_4 {
+        width: 33.3333333333%;
+    }
+    .span_5 {
+        width: 41.6666666667%;
+    }
+    .span_6 {
+        width: 50.0%;
+    }
+    .span_7 {
+        width: 58.3333333333%;
+    }
+    .span_8 {
+        width: 66.6666666667%;
+    }
+    .span_9 {
+        width: 75.0%;
+    }
+    .span_10 {
+        width: 83.3333333333%;
+    }
+    .span_11 {
+        width: 91.6666666667%;
+    }
+    .span_12,
+    .home-title,
+    .about-title,
+    .about-description,
+    .services-frontend,
+    .work-title,
+    .work-description,
+    .work-item,
+    .contact-title,
+    .contact-description,
+    .f1 {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
-    /* 2. 12 Column Grid 320px - 459px 
+
+/* 2. 12 Column Grid 320px - 459px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -789,109 +741,103 @@ h1, h2, h3, h4, h5, h6, p {
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 320px) and (max-width: 459px) {
-        
-        .row {
-            margin-left:-24px;
-        }
-        .col {
-            border-left-width:24px;
-            padding:0 0px;
-        }
-        
-
-        .opl {
-            top: 17px;
-        }
-
-        .menu-icon {
-            top: 27px;
-            left: 27px;
-        }
-
-        .menu ul {
-            padding-top: 80px;
-        }
-        
-        .menu ul li a {
-            padding: 9px 0 9px 27px;
-        }
-
-        .home-title h1 {
-            font-size: 1.6875rem;
-            font-size: 27px;
-        }
-
-        .home-title h2 {
-            font-size: 0.8125rem;
-            font-size: 13px;
-            letter-spacing: 3px;
-        }
-
-        #about .empty,
-        #work .empty,
-        #contact .empty {
-            display: none;
-        }
-
-        .about-title h3,
-        .work-title h3,
-        .contact-title h3,
-        .menu ul li a {
-            font-size: 1.3125rem;
-            font-size: 21px;
-        }
-        .span_1 {
-            width:8.33333333333%;
-        }
-        .span_2 {
-            width:16.6666666667%;
-        }
-        .span_3 {
-            width:25.0%;
-        }
-        .span_4 {
-            width:33.3333333333%;
-        }
-        .span_5 {
-            width:41.6666666667%;
-        }
-        .span_6 {
-            width:50.0%;
-        }
-        .span_7 {
-            width:58.3333333333%;
-        }
-        .span_8 {
-            width:66.6666666667%;
-        }
-        .span_9 {
-            width:75.0%;
-        }
-        .span_10 {
-            width:83.3333333333%;
-        }
-        .span_11 {
-            width:91.6666666667%;
-        }
-        .span_12,
-        .home-title,
-        .about-title,
-        .about-description,
-        .services-design,
-        .services-frontend,
-        .work-title,
-        .work-description,
-        .work-item,
-        .contact-title,
-        .contact-description,
-        .f1 {
-            margin-left:0;
-            width:100%;
-        }
+@media screen and (min-width: 320px) and (max-width: 459px) {
+    .row {
+        margin-left: -24px;
     }
+    .col {
+        border-left-width: 24px;
+        padding: 0 0px;
+    }
+    .opl {
+        top: 17px;
+    }
+    .menu-icon {
+        top: 27px;
+        left: 27px;
+    }
+    .menu ul {
+        padding-top: 80px;
+    }
+    .menu ul li a {
+        padding: 9px 0 9px 27px;
+    }
+    .home-title h1 {
+        font-size: 1.6875rem;
+        font-size: 27px;
+    }
+    .home-title h2 {
+        font-size: 0.8125rem;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    #about .empty,
+    #work .empty,
+    #contact .empty {
+        display: none;
+    }
+    .about-title h3,
+    .work-title h3,
+    .contact-title h3,
+    .menu ul li a {
+        font-size: 1.3125rem;
+        font-size: 21px;
+    }
+    .social [class^="icon-"],
+    .social [class*=" icon-"] {
+        margin: 0 3px;
+    }
+    .span_1 {
+        width: 8.33333333333%;
+    }
+    .span_2 {
+        width: 16.6666666667%;
+    }
+    .span_3 {
+        width: 25.0%;
+    }
+    .span_4 {
+        width: 33.3333333333%;
+    }
+    .span_5 {
+        width: 41.6666666667%;
+    }
+    .span_6 {
+        width: 50.0%;
+    }
+    .span_7 {
+        width: 58.3333333333%;
+    }
+    .span_8 {
+        width: 66.6666666667%;
+    }
+    .span_9 {
+        width: 75.0%;
+    }
+    .span_10 {
+        width: 83.3333333333%;
+    }
+    .span_11 {
+        width: 91.6666666667%;
+    }
+    .span_12,
+    .home-title,
+    .about-title,
+    .about-description,
+    .services-frontend,
+    .work-title,
+    .work-description,
+    .work-item,
+    .contact-title,
+    .contact-description,
+    .f1 {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
-    /* 3. 12 Column Grid 460px - 779px 
+
+/* 3. 12 Column Grid 460px - 779px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -909,107 +855,97 @@ h1, h2, h3, h4, h5, h6, p {
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 460px) and (max-width: 779px) {
-        
-        .row {
-            margin-left:-24px;
-        }
-        .col {
-            border-left-width:24px;
-            padding:0 0px;
-        }
-
-
-        .opl {
-            top: 17px;
-        }
-        
-        .home-title h1 {
-            font-size: 1.6875rem;
-            font-size: 27px;
-        }
-
-        .home-title h2 {
-            font-size: 0.8125rem;
-            font-size: 13px;
-            letter-spacing: 3px;
-        }
-
-        .about-title h3,
-        .work-title h3,
-        .contact-title h3,
-        .menu ul li a {
-            font-size: 1.3125rem;
-            font-size: 21px;
-        }
-
-        .menu-icon {
-            top: 27px;
-            left: 27px;
-        }
-
-        .menu ul {
-            padding-top: 80px;
-        }
-        
-        .menu ul li a {
-            padding: 9px 0 9px 27px;
-        }
-
-        .span_1 {
-            width:8.33333333333%;
-        }
-        .span_2,
-        #about .empty,
-        #work .empty,
-        #contact .empty {
-            width:16.6666666667%;
-        }
-        .span_3 {
-            width:25.0%;
-        }
-        .span_4,
-        .services-design,
-        .services-frontend {
-            width:33.3333333333%;
-        }
-        .span_5 {
-            width:41.6666666667%;
-        }
-        .span_6,
-        .work-item {
-            width:50.0%;
-        }
-        .span_7 {
-            width:58.3333333333%;
-        }
-        .span_8,
-        .about-description,
-        .work-description,
-        .contact-description {
-            width:66.6666666667%;
-        }
-        .span_9 {
-            width:75.0%;
-        }
-        .span_10 {
-            width:83.3333333333%;
-        }
-        .span_11 {
-            width:91.6666666667%;
-        }
-        .span_12,
-        .home-title,
-        .about-title,
-        .work-title,
-        .contact-title,
-        .f1 {
-            margin-left:0;
-            width:100%;
-        }
+@media screen and (min-width: 460px) and (max-width: 779px) {
+    .row {
+        margin-left: -24px;
     }
+    .col {
+        border-left-width: 24px;
+        padding: 0 0px;
+    }
+    .opl {
+        top: 17px;
+    }
+    .home-title h1 {
+        font-size: 1.6875rem;
+        font-size: 27px;
+    }
+    .home-title h2 {
+        font-size: 0.8125rem;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    .about-title h3,
+    .work-title h3,
+    .contact-title h3,
+    .menu ul li a {
+        font-size: 1.3125rem;
+        font-size: 21px;
+    }
+    .menu-icon {
+        top: 27px;
+        left: 27px;
+    }
+    .menu ul {
+        padding-top: 80px;
+    }
+    .menu ul li a {
+        padding: 9px 0 9px 27px;
+    }
+    .span_1 {
+        width: 8.33333333333%;
+    }
+    .span_2,
+    #about .empty,
+    #work .empty,
+    #contact .empty {
+        width: 16.6666666667%;
+    }
+    .span_3 {
+        width: 25.0%;
+    }
+    .span_4,
+    .services-frontend {
+        width: 33.3333333333%;
+    }
+    .span_5 {
+        width: 41.6666666667%;
+    }
+    .span_6,
+    .work-item {
+        width: 50.0%;
+    }
+    .span_7 {
+        width: 58.3333333333%;
+    }
+    .span_8,
+    .about-description,
+    .work-description,
+    .contact-description {
+        width: 66.6666666667%;
+    }
+    .span_9 {
+        width: 75.0%;
+    }
+    .span_10 {
+        width: 83.3333333333%;
+    }
+    .span_11 {
+        width: 91.6666666667%;
+    }
+    .span_12,
+    .home-title,
+    .about-title,
+    .work-title,
+    .contact-title,
+    .f1 {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
-    /* 4. 12 Column Grid 780px - 1199px 
+
+/* 4. 12 Column Grid 780px - 1199px 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -1027,73 +963,68 @@ h1, h2, h3, h4, h5, h6, p {
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 780px) and (max-width: 1199px) {
-        
-        .row {
-            margin-left:-24px;
-        }
-        .col {
-            border-left-width:24px;
-            padding:0 0px;
-        }
-        
-        
-        
-        
-        .span_1 {
-            width:8.33333333333%;
-        }
-        .span_2,
-        #about .empty,
-        #work .empty,
-        #contact .empty {
-            width:16.6666666667%;
-        }
-        .span_3 {
-            width:25.0%;
-        }
-        .span_4,
-        .services-design,
-        .services-frontend,
-        .work-item {
-            width:33.3333333333%;
-        }
-        .span_5 {
-            width:41.6666666667%;
-        }
-        .span_6 {
-            width:50.0%;
-        }
-        .span_7 {
-            width:58.3333333333%;
-        }
-        .span_8,
-        .about-description,
-        .work-description,
-        .contact-description {
-            width:66.6666666667%;
-        }
-        .span_9 {
-            width:75.0%;
-        }
-        .span_10 {
-            width:83.3333333333%;
-        }
-        .span_11 {
-            width:91.6666666667%;
-        }
-        .span_12,
-        .home-title,
-        .about-title,
-        .work-title,
-        .contact-title,
-        .f1 {
-            margin-left:0;
-            width:100%;
-        }
+@media screen and (min-width: 780px) and (max-width: 1199px) {
+    .row {
+        margin-left: -24px;
     }
+    .col {
+        border-left-width: 24px;
+        padding: 0 0px;
+    }
+    .span_1 {
+        width: 8.33333333333%;
+    }
+    .span_2,
+    #about .empty,
+    #work .empty,
+    #contact .empty {
+        width: 16.6666666667%;
+    }
+    .span_3 {
+        width: 25.0%;
+    }
+    .span_4,
+    .services-frontend,
+    .work-item {
+        width: 33.3333333333%;
+    }
+    .span_5 {
+        width: 41.6666666667%;
+    }
+    .span_6 {
+        width: 50.0%;
+    }
+    .span_7 {
+        width: 58.3333333333%;
+    }
+    .span_8,
+    .about-description,
+    .work-description,
+    .contact-description {
+        width: 66.6666666667%;
+    }
+    .span_9 {
+        width: 75.0%;
+    }
+    .span_10 {
+        width: 83.3333333333%;
+    }
+    .span_11 {
+        width: 91.6666666667%;
+    }
+    .span_12,
+    .home-title,
+    .about-title,
+    .work-title,
+    .contact-title,
+    .f1 {
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
-    /* 5. 12 Column Grid 1200px - Infinity 
+
+/* 5. 12 Column Grid 1200px - Infinity 
     ----------------------------------------------------------------------------- 
     
     Span 1:    8.33333333333%
@@ -1111,69 +1042,62 @@ h1, h2, h3, h4, h5, h6, p {
     
     ----------------------------------------------------------------------------- */
 
-    @media screen and (min-width: 1200px) {
-        
-        .row {
-            margin-left:-24px;
-        }
-        .col {
-            border-left-width:24px;
-            padding:0 0px;
-        }
-        
-        
-        
-        
-        .span_1 {
-            width:8.33333333333%;
-        }
-        .span_2 {
-            width:16.6666666667%;
-        }
-        .span_3,
-        #about .empty,
-        #work .empty,
-        #contact .empty {
-            width:25.0%;
-        }
-        .span_4,
-        .services-frontend,
-        .services-design,
-        .work-item {
-            width:33.3333333333%;
-        }
-        .span_5 {
-            width:41.6666666667%;
-        }
-        .span_6,
-        .about-description,
-        .work-description,
-        .contact-description {
-            width:50.0%;
-        }
-        .span_7 {
-            width:58.3333333333%;
-        }
-        .span_8 {
-            width:66.6666666667%;
-        }
-        .span_9 {
-            width:75.0%;
-        }
-        .span_10 {
-            width:83.3333333333%;
-        }
-        .span_11 {
-            width:91.6666666667%;
-        }
-        .span_12,
-        .home-title,
-        .about-title,
-        .work-title,
-        .contact-title,
-        .f1 {
-            margin-left:0;
-            width:100%;
-        }
+@media screen and (min-width: 1200px) {
+    .row {
+        margin-left: -24px;
     }
-
+    .col {
+        border-left-width: 24px;
+        padding: 0 0px;
+    }
+    .span_1 {
+        width: 8.33333333333%;
+    }
+    .span_2 {
+        width: 16.6666666667%;
+    }
+    .span_3,
+    #about .empty,
+    #work .empty,
+    #contact .empty {
+        width: 25.0%;
+    }
+    .span_4,
+    .services-frontend
+    .work-item {
+        width: 33.3333333333%;
+    }
+    .span_5 {
+        width: 41.6666666667%;
+    }
+    .span_6,
+    .about-description,
+    .work-description,
+    .contact-description {
+        width: 50.0%;
+    }
+    .span_7 {
+        width: 58.3333333333%;
+    }
+    .span_8 {
+        width: 66.6666666667%;
+    }
+    .span_9 {
+        width: 75.0%;
+    }
+    .span_10 {
+        width: 83.3333333333%;
+    }
+    .span_11 {
+        width: 91.6666666667%;
+    }
+    .span_12,
+    .home-title,
+    .about-title,
+    .work-title,
+    .contact-title,
+    .f1 {
+        margin-left: 0;
+        width: 100%;
+    }
+}
