@@ -56,7 +56,7 @@ require(
             },
             legend: {
                 orient: 'vertical',
-                x: 'left',
+                x: 'right',
                 y: 'center',
                 itemGap: 12,
                 data: ['jQuery', 'HTML5', 'CSS', 'JavaScript', 'Vue']

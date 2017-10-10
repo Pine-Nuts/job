@@ -483,6 +483,11 @@ p {
     padding-bottom: 150px;
 }
 
+.services-frontend #container {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto
+}
 
 
 /* ==========================================================================
