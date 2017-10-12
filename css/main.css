@@ -357,7 +357,6 @@ p {
    ========================================================================== */
 
 #about,
-#services,
 #work,
 #contact {
     text-align: center;
@@ -466,30 +465,17 @@ p {
 #about {
     padding-bottom: 90px;
     background-color: #fff;
+    height: 100%;
 }
-
-/* ==========================================================================
-   Services
-   ========================================================================== */
-
-#services {
+.about-examples #container {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #fff;
     color: #666;
-}
-
-.services-content {
-    padding-bottom: 150px;
-}
-
-.services-frontend #container {
     height: 500px;
     width: 500px;
     margin: 0 auto
 }
-
-
 /* ==========================================================================
    Work
    ========================================================================== */
@@ -553,6 +539,16 @@ p {
    Contact
    ========================================================================== */
 
+#contact{
+    /* background-color: rgba(0,0,0, .5); */
+    background-image: url(../img/contact-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-attachment: fixed; */
+    position: relative;
+    text-align: center;
+}
 .social [class^="icon-"],
 .social [class*=" icon-"] {
     font-family: 'iconfont';
@@ -595,8 +591,6 @@ p {
   }
   
   .icon-weichat:before { content: "\e632"; }
-  
-  .icon-zhihu:before { content: "\e619"; }
   
   .icon-weibo:before { content: "\e60d"; }
   
@@ -715,7 +709,6 @@ p {
     .home-title,
     .about-title,
     .about-description,
-    .services-frontend,
     .work-title,
     .work-description,
     .work-item,
@@ -829,7 +822,6 @@ p {
     .home-title,
     .about-title,
     .about-description,
-    .services-frontend,
     .work-title,
     .work-description,
     .work-item,
@@ -909,8 +901,7 @@ p {
     .span_3 {
         width: 25.0%;
     }
-    .span_4,
-    .services-frontend {
+    .span_4 {
         width: 33.3333333333%;
     }
     .span_5 {
@@ -989,7 +980,6 @@ p {
         width: 25.0%;
     }
     .span_4,
-    .services-frontend,
     .work-item {
         width: 33.3333333333%;
     }
@@ -1068,7 +1058,6 @@ p {
         width: 25.0%;
     }
     .span_4,
-    .services-frontend
     .work-item {
         width: 33.3333333333%;
     }
