@@ -40,11 +40,11 @@ jQuery(document).ready(function($) {
 	// Nav
 
 	// Works
-	$(".work-item").hover(function(e){
-		$(this).children('.work-item-inside').addClass("visuallyshowed");
-	}, function(){ 
-		$(this).children('.work-item-inside').removeClass("visuallyshowed");
-	});
+	// $(".work-item").hover(function(e){
+	// 	$(this).children('.work-item-inside').addClass("visuallyshowed");
+	// }, function(){ 
+	// 	$(this).children('.work-item-inside').removeClass("visuallyshowed");
+	// });
 	// Works
 
 	// Skrollr · Mobile NONE
@@ -85,7 +85,7 @@ function fixSizes() {
 	$(".home-title").each(function() {
 		$(this).css('padding-top', ($(this).parent().height() - $(this).height()) / 2);
 	});
-	$(".work-item-inside-content").each(function() {
-		$(this).css('margin-top', ($(this).parent().height() - $(this).height()) / 2);
-	});
+	// $(".work-item-inside-content").each(function() {
+	// 	$(this).css('margin-top', ($(this).parent().height() - $(this).height()) / 2);
+	// });
 }
