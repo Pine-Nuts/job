@@ -11,7 +11,7 @@
 	<title>个人简历</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/normalize.min.css">
-	<!-- <link rel="stylesheet" href="css/base.css"> -->
+	<link rel="stylesheet" href="css/style.css" media="screen">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- Fonts -->
 	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700'>
@@ -27,7 +27,7 @@
 	<!-- <div class="outer-container">
 		<div class="inner-container"> -->
 	<section class="section-wrap wrapper">
-		<header>
+		<!-- <header>
 			<a class="menu-icon jiji">
 				<span></span>
 			</a>
@@ -47,12 +47,12 @@
 					</li>
 				</ul>
 			</nav>
-		</header>
+		</header> -->
 		<div class="section section-1 row" id="home">
 			<!-- <div class="title active">
 							<p class="tit">CSS3 纵向滚屏翻页，支持键盘，鼠标滚轮操作</p>
 						</div> -->
-			<div class="overlay">
+			<!-- <div class="overlay">
 				<div class="col home-title jiji">
 					<h1>Hello,I'm PineNut</h1>
 					<h2>路漫漫其修远兮，吾将上下而求索</h2>
@@ -60,6 +60,36 @@
 					<p>一个前端开发工程师</p>
 					<p>17755456856@163.com</p>
 				</div>
+			</div> -->
+			
+			<div class="page home-content">
+			<div class="container">
+				<div style="position: relative;" class="slideshow grid_12">
+					<div class="holder" style="">
+						<!-- 主体部分 -->
+						<div id="wowslider-container">
+							<div class="ws_images">
+								<ul>
+									<li>
+										<!-- <a href="#overview"> -->
+										<img src="img/home/slide1.jpg" alt="123" />
+										<!-- </a> -->
+									</li>
+									<li>
+										<img src="img/home/slide2.jpg" alt="456" />
+									</li>
+									<li>
+										<img src="img/home/slide3.jpg" alt="789" />
+									</li>
+									<li>
+										<img src="img/home/slide4.jpg" alt="012" />
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			</div>
 		</div>
 		<div class="section section-2 row" id="about">
@@ -104,7 +134,70 @@
 				</div>
 				<div class="col empty">&nbsp;</div>
 				<div class="col work-description">
-					<p data-900="opacity:0;" data-1300="opacity:1;">A selection of recent projects I've been working on: landing pages, websites, email marketing...</p>
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img/works/camera-icon.png" alt="Picture">
+						</div>
+
+						<div class="cd-timeline-content projects">
+							<img src="img/works/project-1.jpg" alt="">
+							<div class="project-content">
+								<h2>个人空间</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img/works/camera-icon.png" alt="Picture">
+						</div>
+
+						<div class="cd-timeline-content projects">
+							<img src="img/works/project-2.jpg" alt="">
+							<div class="project-content">
+								<h2>陆海科技</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img/works/camera-icon.png" alt="Picture">
+						</div>
+
+						<div class="cd-timeline-content projects">
+							<img src="img/works/project-3.jpg" alt="">
+							<div class="project-content">
+								<h2>梦桑网</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img/works/camera-icon.png" alt="Picture">
+						</div>
+
+						<div class="cd-timeline-content projects">
+							<img src="img/works/project-4.jpg" alt="">
+							<div class="project-content">
+								<h2>甫田网</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img/works/camera-icon.png" alt="Picture">
+						</div>
+
+						<div class="cd-timeline-content projects">
+							<img src="img/works/project-5.jpg" alt="">
+							<div class="project-content">
+								<h2>塑米(移动端)</h2>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col empty">&nbsp;</div>
 			</div>
@@ -125,9 +218,9 @@
 					<span onmouseover="this.className = 'code on';" onmouseout="this.className = 'code';">
 						<a class="iconfont icon-github"></a>
 						<div class="code_nr">
-								<div class="lead"></div>
-								<img src="img/weixin.jpg" width="100" height="100" />
-							</div>
+							<div class="lead"></div>
+							<img src="img/weixin.jpg" width="100" height="100" />
+						</div>
 					</span>
 					<span>
 						<a class="iconfont icon-email"></a>
@@ -159,18 +252,20 @@
 
 
 	<!-- JavaScript -->
-	<script>
+	<!-- <script>
 		document.querySelector('body').addEventListener('touchmove', function (ev) {
 			event.preventDefault();
 		});
-	</script>
+	</script> -->
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/changePage.js"></script>
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- <script src="js/skrollr.js"></script> -->
 	<!-- <script src="js/main.js"></script> -->
-	<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
-	<script src="js/echart-pie.js"></script>
+	<script src="js/wowslider.js"></script>
+	<script src="js/script.js"></script>
+	<!-- <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+	<script src="js/echart-pie.js"></script> -->
 
 
 
