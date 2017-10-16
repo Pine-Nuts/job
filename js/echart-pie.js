@@ -137,11 +137,11 @@ require(
                     radius: [50, 75],
                     itemStyle: dataStyle,
                     data: [{
-                            value: 70,
+                            value: 85,
                             name: 'Vue'
                         },
                         {
-                            value: 30,
+                            value: 15,
                             name: 'invisible',
                             itemStyle: placeHolderStyle
                         }
